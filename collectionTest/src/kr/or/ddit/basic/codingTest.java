@@ -15,6 +15,7 @@ public class codingTest {
 			num.add(String.valueOf(numbers[i]));
 		}
 		
+		num.get(0);
 		Collections.sort(num, new eeee());
 		String answer = "";
 		for (String string : num) {
@@ -29,6 +30,6 @@ class eeee implements Comparator<String>{
 
 	@Override
 	public int compare(String str1, String str2) {
-		return str2.compareTo(str1);
+		return (str2+str1).compareTo(str1+str2);
 	}
 }
